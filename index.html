@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Idea Bank — 30 Ide Konten Siap Pakai @adigitalabs</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Cabinet+Grotesk:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f8f6f0;
+  --surface: #ffffff;
+  --surface2: #f0ede6;
+  --border: rgba(0,0,0,0.07);
+  --accent: #1a1a2e;
+  --accent2: #e8450a;
+  --accent3: #f5a623;
+  --green: #1a7a4a;
+  --blue: #1a4a8a;
+  --purple: #6b35c8;
+  --text: #1a1a2e;
+  --muted: #8a8070;
+  --muted2: #5a5550;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* GRAIN TEXTURE */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── HEADER STRIPE ── */
+.top-stripe {
+  background: var(--accent);
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 10px;
+}
+.top-stripe span { color: var(--accent3); }
+
+/* ── HERO ── */
+.hero {
+  padding: 56px 0 0;
+  animation: fadeUp 0.7s ease both;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent2);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-family: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(36px, 7vw, 62px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.hero h1 .highlight {
+  display: inline-block;
+  background: var(--accent2);
+  color: #fff;
+  padding: 2px 12px;
+  border-radius: 6px;
+  line-height: 1.2;
+}
+
+.hero .sub {
+  font-size: 17px;
+  color: var(--muted2);
+  max-width: 520px;
+  margin-bottom: 32px;
+  line-height: 1.75;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 0;
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 56px;
+  background: var(--surface);
+}
+
+.stat {
+  flex: 1;
+  padding: 18px 20px;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+.stat:last-child { border-right: none; }
+
+.stat .s-num {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--accent2);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat .s-label { font-size: 12px; color: var(--muted); font-weight: 500; }
+
+.divider {
+  height: 1.5px;
+  background: var(--border);
+  margin: 44px 0;
+}
+
+/* ── SECTION LABEL ── */
+.sec-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.sec-label::after {
+  content: '';
+  flex: 1;
+  height: 1.5px;
+  background: var(--border);
+}
+
+/* ── CATEGORY FILTER ── */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.filter-btn {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  color: var(--muted2);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ── IDEA CARDS ── */
+.ideas-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.idea-card {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.idea-card:hover {
+  border-color: rgba(0,0,0,0.15);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transform: translateY(-1px);
+}
+
+.idea-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.cat-mulai .idea-num { background: var(--accent2); }
+.cat-cuan .idea-num { background: var(--green); }
+.cat-mindset .idea-num { background: var(--purple); }
+.cat-tips .idea-num { background: var(--blue); }
+.cat-personal .idea-num { background: var(--accent3); color: var(--accent); }
+
+.idea-body { flex: 1; }
+
+.idea-cat {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cat-mulai .idea-cat { color: var(--accent2); }
+.cat-cuan .idea-cat { color: var(--green); }
+.cat-mindset .idea-cat { color: var(--purple); }
+.cat-tips .idea-cat { color: var(--blue); }
+.cat-personal .idea-cat { color: #b07010; }
+
+.idea-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.idea-angle {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.idea-format {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface2);
+  color: var(--muted2);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 100px;
+  margin-top: 8px;
+  letter-spacing: 0.04em;
+}
+
+/* ── CALLOUT ── */
+.callout {
+  border-radius: 12px;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  border-left: 3px solid;
+}
+
+.callout.orange {
+  background: rgba(232,69,10,0.06);
+  border-color: var(--accent2);
+  color: var(--muted2);
+}
+.callout.orange strong { color: var(--text); }
+
+.callout.green {
+  background: rgba(26,122,74,0.06);
+  border-color: var(--green);
+  color: var(--muted2);
+}
+.callout.green strong { color: var(--text); }
+
+/* ── CARA PAKAI ── */
+.howto-steps {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.step-item {
+  display: flex;
+  gap: 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 18px;
+  align-items: flex-start;
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-text strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.step-text span {
+  font-size: 13px;
+  color: var(--muted2);
+  line-height: 1.55;
+}
+
+/* ── BRIDGE + CTA ── */
+.bridge {
+  background: var(--accent);
+  border-radius: 20px;
+  padding: 32px 28px;
+  margin-bottom: 12px;
+  color: rgba(255,255,255,0.85);
+  position: relative;
+  overflow: hidden;
+}
+
+.bridge::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(232,69,10,0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.bridge-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent3);
+  margin-bottom: 14px;
+}
+
+.bridge p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: rgba(255,255,255,0.9);
+}
+
+.bridge .pain {
+  background: rgba(255,255,255,0.08);
+  border-left: 3px solid var(--accent2);
+  border-radius: 0 10px 10px 0;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-style: italic;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.bridge .pain strong {
+  color: #fff;
+  font-style: normal;
+}
+
+.bridge .resolve {
+  font-size: 15px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+}
+
+.cta-section { margin: 12px 0 48px; text-align: center; }
+
+.cta-box {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 24px;
+  padding: 44px 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-box::before {
+  content: '';
+  position: absolute;
+  bottom: -80px; right: -80px;
+  width: 280px; height: 280px;
+  background: radial-gradient(circle, rgba(232,69,10,0.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+
+.cta-free {
+  display: inline-block;
+  background: rgba(26,122,74,0.1);
+  border: 1px solid rgba(26,122,74,0.25);
+  color: var(--green);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.cta-box h3 {
+  font-family: 'Cabinet Grotesk', 'Plus Jakarta Sans', sans-serif;
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.cta-box h3 span { color: var(--accent2); }
+
+.cta-box p {
+  font-size: 15px;
+  color: var(--muted2);
+  max-width: 440px;
+  margin: 0 auto 28px;
+  line-height: 1.75;
+}
+.cta-box p strong { color: var(--text); }
+
+.price-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface2);
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 22px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.price-main {
+  font-family: 'Cabinet Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--accent2);
+}
+
+.price-sep { width: 1px; height: 36px; background: var(--border); }
+
+.price-note { font-size: 13px; color: var(--muted); text-align: left; line-height: 1.5; }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 16px 36px;
+  border-radius: 100px;
+  transition: all 0.3s;
+  box-shadow: 0 8px 24px rgba(26,26,46,0.2);
+}
+
+.btn:hover {
+  background: var(--accent2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(232,69,10,0.3);
+}
+
+.btn-arrow { transition: transform 0.3s; }
+.btn:hover .btn-arrow { transform: translateX(4px); }
+
+.cta-note { margin-top: 14px; font-size: 12px; color: var(--muted); }
+.cta-quote {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* ── FOOTER ── */
+.footer {
+  text-align: center;
+  padding: 28px 0 48px;
+  border-top: 1.5px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 48px;
+}
+.footer a { color: var(--accent2); text-decoration: none; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.hidden { display: none !important; }
+
+@media (max-width: 480px) {
+  .hero-stats { flex-wrap: wrap; }
+  .stat { min-width: 50%; }
+}
+</style>
+</head>
+<body>
+
+<div class="top-stripe">Free Resource dari <span>@adigitalabs</span> · Bookmark halaman ini</div>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag">💡 Content Idea Bank</div>
+    <h1>30 Ide Konten<br><span class="highlight">Siap Pakai</span><br>Buat Creator</h1>
+    <p class="sub">Gak ada alasan lagi buat bilang "bingung mau posting apa." Semua udah gua pilihkan — tinggal eksekusi.</p>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="s-num">30</div>
+        <div class="s-label">Ide Konten</div>
+      </div>
+      <div class="stat">
+        <div class="s-num">5</div>
+        <div class="s-label">Kategori</div>
+      </div>
+      <div class="stat">
+        <div class="s-num">3</div>
+        <div class="s-label">Format Konten</div>
+      </div>
+      <div class="stat">
+        <div class="s-num">Rp0</div>
+        <div class="s-label">Biaya</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARA PAKAI -->
+  <div class="reveal">
+    <div class="sec-label">Cara Pakai</div>
+    <div class="howto-steps">
+      <div class="step-item">
+        <div class="step-icon">1</div>
+        <div class="step-text">
+          <strong>Pilih kategori yang relevan</strong>
+          <span>Filter berdasarkan topik yang paling cocok sama kondisi audiens lo hari ini.</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-icon">2</div>
+        <div class="step-text">
+          <strong>Adaptasi ke niche lo</strong>
+          <span>Judul dan angle-nya tinggal lu sesuaikan. Ganti konteks umum jadi spesifik ke pengalaman lo.</span>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-icon">3</div>
+        <div class="step-text">
+          <strong>Eksekusi dalam 24 jam</strong>
+          <span>Jangan simpen ide terlalu lama. Ide yang gak dieksekusi = sampah digital.</span>
+        </div>
+      </div>
+    </div>
+    <div class="callout orange">
+      ⚡ <strong>Pro tip:</strong> Jangan coba eksekusi semua sekaligus. Pilih 1 ide, buat hari ini, posting. Momentum itu lebih penting dari kesempurnaan.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- IDEA BANK -->
+  <div class="reveal">
+    <div class="sec-label">30 Ide Konten</div>
+
+    <!-- FILTER -->
+    <div class="filter-row">
+      <button class="filter-btn active" onclick="filterIdeas('all', this)">Semua (30)</button>
+      <button class="filter-btn" onclick="filterIdeas('mulai', this)">🚀 Mulai Ngonten (8)</button>
+      <button class="filter-btn" onclick="filterIdeas('cuan', this)">💰 Cuan dari Konten (7)</button>
+      <button class="filter-btn" onclick="filterIdeas('mindset', this)">🧠 Mindset Creator (6)</button>
+      <button class="filter-btn" onclick="filterIdeas('tips', this)">📱 Tips & How-To (5)</button>
+      <button class="filter-btn" onclick="filterIdeas('personal', this)">🙋 Personal Story (4)</button>
+    </div>
+
+    <div class="ideas-grid" id="ideas-grid">
+
+      <!-- MULAI NGONTEN -->
+      <div class="idea-card cat-mulai" data-cat="mulai">
+        <div class="idea-num">1</div>
+        <div class="idea-body">
+          <div class="idea-cat">🚀 Mulai Ngonten</div>
+          <div class="idea-title">5 hal yang gua wish gua tau sebelum mulai ngonten</div>
+          <div class="idea-angle">Personal, relatable, langsung kena ke pemula. Save rate tinggi.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mulai" data-cat="mulai">
+        <div class="idea-num">2</div>
+        <div class="idea-body">
+          <div class="idea-cat">🚀 Mulai Ngonten</div>
+          <div class="idea-title">Gua mulai ngonten modal HP biasa. Ini yang terjadi setelah [X] bulan.</div>
+          <div class="idea-angle">Before & after. Bukti nyata, bukan janji kosong.</div>
+          <div class="idea-format">🎬 Reels Talking Head</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mulai" data-cat="mulai">
+        <div class="idea-num">3</div>
+        <div class="idea-body">
+          <div class="idea-cat">🚀 Mulai Ngonten</div>
+          <div class="idea-title">Tools gratis yang gua pakai buat bikin konten dari nol (totalnya Rp 0)</div>
+          <div class="idea-angle">Value tinggi + save rate tinggi. Langsung actionable.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mulai" data-cat="mulai">
+        <div class="idea-num">4</div>
+        <div class="idea-body">
+          <div class="idea-cat">🚀 Mulai Ngonten</div>
+          <div class="idea-title">Kenapa lu belum mulai ngonten padahal udah mau dari lama?</div>
+          <div class="idea-angle">Pertanyaan retoris yang nyindir halus. Pancing komentar jujur dari audiens.</div>
+          <div class="idea-format">📸 Single Post</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mulai" data-cat="mulai">
+        <div class="idea-num">5</div>
+        <div class="idea-body">
+          <div class="idea-cat">🚀 Mulai Ngonten</div>
+          <div class="idea-title">Konten pertama lu gak harus bagus — cukup ada</div>
+          <div class="idea-angle">Validasi rasa takut audiens, lalu reframe ekspektasi.</div>
+          <div class="idea-format">🎬 Reels Teks Overlay</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mulai" data-cat="mulai">
+        <div class="idea-num">6</div>
+        <div class="idea-body">
+          <div class="idea-cat">🚀 Mulai Ngonten</div>
+          <div class="idea-title">Checklist sebelum upload konten pertama lu</div>
+          <div class="idea-angle">Super actionable. Orang yang mau mulai pasti save ini.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mulai" data-cat="mulai">
+        <div class="idea-num">7</div>
+        <div class="idea-body">
+          <div class="idea-cat">🚀 Mulai Ngonten</div>
+          <div class="idea-title">Perbedaan creator yang bertahan 6 bulan vs yang berhenti di bulan pertama</div>
+          <div class="idea-angle">Counterintuitive. Biasanya jawabannya bukan soal skill atau konten.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mulai" data-cat="mulai">
+        <div class="idea-num">8</div>
+        <div class="idea-body">
+          <div class="idea-cat">🚀 Mulai Ngonten</div>
+          <div class="idea-title">POV: lu akhirnya upload konten pertama setelah nunda 3 bulan</div>
+          <div class="idea-angle">Relatable banget. Orang yang di posisi ini langsung ngerasa dipanggil.</div>
+          <div class="idea-format">🎬 Reels Talking Head</div>
+        </div>
+      </div>
+
+      <!-- CUAN DARI KONTEN -->
+      <div class="idea-card cat-cuan" data-cat="cuan">
+        <div class="idea-num">9</div>
+        <div class="idea-body">
+          <div class="idea-cat">💰 Cuan dari Konten</div>
+          <div class="idea-title">Berapa cuan yang bisa didapat dari 1.000 followers kalau strateginya bener?</div>
+          <div class="idea-angle">Angka spesifik selalu menarik perhatian. Kasih kalkulasi realistis.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-cuan" data-cat="cuan">
+        <div class="idea-num">10</div>
+        <div class="idea-body">
+          <div class="idea-cat">💰 Cuan dari Konten</div>
+          <div class="idea-title">Gua dapet cuan pertama dari konten tanpa viral — ini caranya</div>
+          <div class="idea-angle">Story format. Jujur soal prosesnya, bukan cuma hasilnya.</div>
+          <div class="idea-format">🎬 Reels Talking Head</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-cuan" data-cat="cuan">
+        <div class="idea-num">11</div>
+        <div class="idea-body">
+          <div class="idea-cat">💰 Cuan dari Konten</div>
+          <div class="idea-title">4 cara monetisasi konten yang bisa dimulai sekarang (tanpa modal)</div>
+          <div class="idea-angle">List format dengan breakdown praktis per opsi.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-cuan" data-cat="cuan">
+        <div class="idea-num">12</div>
+        <div class="idea-body">
+          <div class="idea-cat">💰 Cuan dari Konten</div>
+          <div class="idea-title">Kenapa produk digital Rp 29.000 bisa lebih profitable dari jasa mahal?</div>
+          <div class="idea-angle">Counterintuitive. Jelaskan soal volume vs margin.</div>
+          <div class="idea-format">📸 Single Post</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-cuan" data-cat="cuan">
+        <div class="idea-num">13</div>
+        <div class="idea-body">
+          <div class="idea-cat">💰 Cuan dari Konten</div>
+          <div class="idea-title">Funnel konten sederhana yang gua pakai buat generate penjualan</div>
+          <div class="idea-angle">Educational. Kasih visual diagram funnel yang gampang dipahami.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-cuan" data-cat="cuan">
+        <div class="idea-num">14</div>
+        <div class="idea-body">
+          <div class="idea-cat">💰 Cuan dari Konten</div>
+          <div class="idea-title">Beda creator yang kontennya laku vs yang cuma dapat likes</div>
+          <div class="idea-angle">Perbandingan yang relatable. Banyak creator ngerasa "dapat likes tapi gak ada yang beli."</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-cuan" data-cat="cuan">
+        <div class="idea-num">15</div>
+        <div class="idea-body">
+          <div class="idea-cat">💰 Cuan dari Konten</div>
+          <div class="idea-title">Kalau gua mulai dari nol lagi hari ini, ini yang gua lakuin di 30 hari pertama</div>
+          <div class="idea-angle">Roadmap singkat yang langsung bisa diikutin. High save rate.</div>
+          <div class="idea-format">🎬 Reels Talking Head</div>
+        </div>
+      </div>
+
+      <!-- MINDSET -->
+      <div class="idea-card cat-mindset" data-cat="mindset">
+        <div class="idea-num">16</div>
+        <div class="idea-body">
+          <div class="idea-cat">🧠 Mindset Creator</div>
+          <div class="idea-title">Stop nunggu perfect. Konten pertama lu tugasnya cuma satu: ada.</div>
+          <div class="idea-angle">Direct, singkat, powerful. Cocok buat single post atau opening reels.</div>
+          <div class="idea-format">📸 Single Post</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mindset" data-cat="mindset">
+        <div class="idea-num">17</div>
+        <div class="idea-body">
+          <div class="idea-cat">🧠 Mindset Creator</div>
+          <div class="idea-title">Overthinking sebelum posting itu wajar — tapi ada batasnya</div>
+          <div class="idea-angle">Empathy mirror. Validasi dulu, baru kasih reframe.</div>
+          <div class="idea-format">🎬 Reels Talking Head</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mindset" data-cat="mindset">
+        <div class="idea-num">18</div>
+        <div class="idea-body">
+          <div class="idea-cat">🧠 Mindset Creator</div>
+          <div class="idea-title">Konsistensi itu bukan soal posting tiap hari — ini definisi yang lebih realistis</div>
+          <div class="idea-angle">Reframe ekspektasi yang sering bikin creator burnout.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mindset" data-cat="mindset">
+        <div class="idea-num">19</div>
+        <div class="idea-body">
+          <div class="idea-cat">🧠 Mindset Creator</div>
+          <div class="idea-title">Kenapa takut dihakimi orang itu justru tanda lu serius</div>
+          <div class="idea-angle">Counterintuitive twist yang bikin orang mau baca sampai habis.</div>
+          <div class="idea-format">📸 Single Post</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mindset" data-cat="mindset">
+        <div class="idea-num">20</div>
+        <div class="idea-body">
+          <div class="idea-cat">🧠 Mindset Creator</div>
+          <div class="idea-title">Perbedaan creator yang maju vs yang stuck di tempat</div>
+          <div class="idea-angle">Bukan soal skill atau waktu — tapi keputusan spesifik.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-mindset" data-cat="mindset">
+        <div class="idea-num">21</div>
+        <div class="idea-body">
+          <div class="idea-cat">🧠 Mindset Creator</div>
+          <div class="idea-title">Flop itu bukan kegagalan — ini cara gua baca konten yang gak perform</div>
+          <div class="idea-angle">Reframe "gagal" jadi "data." Sangat relate buat creator pemula.</div>
+          <div class="idea-format">🎬 Reels Talking Head</div>
+        </div>
+      </div>
+
+      <!-- TIPS & HOW-TO -->
+      <div class="idea-card cat-tips" data-cat="tips">
+        <div class="idea-num">22</div>
+        <div class="idea-body">
+          <div class="idea-cat">📱 Tips & How-To</div>
+          <div class="idea-title">Cara nulis hook yang bikin orang berhenti scroll dalam 3 detik</div>
+          <div class="idea-angle">Langsung actionable. Kasih contoh sebelum vs sesudah.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-tips" data-cat="tips">
+        <div class="idea-num">23</div>
+        <div class="idea-body">
+          <div class="idea-cat">📱 Tips & How-To</div>
+          <div class="idea-title">Cara bikin content calendar mingguan dalam 15 menit</div>
+          <div class="idea-angle">Tutorial singkat yang bisa langsung dipraktekkan. Save rate tinggi.</div>
+          <div class="idea-format">🎬 Reels Teks Overlay</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-tips" data-cat="tips">
+        <div class="idea-num">24</div>
+        <div class="idea-body">
+          <div class="idea-cat">📱 Tips & How-To</div>
+          <div class="idea-title">5 pertanyaan yang gua jawab tiap minggu buat dapat 10+ ide konten</div>
+          <div class="idea-angle">Framework sederhana yang bisa langsung dipakai siapapun.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-tips" data-cat="tips">
+        <div class="idea-num">25</div>
+        <div class="idea-body">
+          <div class="idea-cat">📱 Tips & How-To</div>
+          <div class="idea-title">Cara edit Reels yang engaging pakai CapCut — tanpa ribet</div>
+          <div class="idea-angle">Tutorial langkah demi langkah. Relevan banget buat pemula.</div>
+          <div class="idea-format">🎬 Reels Teks Overlay</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-tips" data-cat="tips">
+        <div class="idea-num">26</div>
+        <div class="idea-body">
+          <div class="idea-cat">📱 Tips & How-To</div>
+          <div class="idea-title">Cara baca Instagram Insights buat tau konten mana yang harus diulang</div>
+          <div class="idea-angle">Educational. Banyak creator yang gak tau cara baca analytics mereka sendiri.</div>
+          <div class="idea-format">📄 Carousel</div>
+        </div>
+      </div>
+
+      <!-- PERSONAL STORY -->
+      <div class="idea-card cat-personal" data-cat="personal">
+        <div class="idea-num">27</div>
+        <div class="idea-body">
+          <div class="idea-cat">🙋 Personal Story</div>
+          <div class="idea-title">Jujur soal [X bulan] pertama gua ngonten — yang gak pernah gua ceritain</div>
+          <div class="idea-angle">Vulnerability yang terukur. Cerita jujur tentang struggle awal yang relate.</div>
+          <div class="idea-format">🎬 Reels Talking Head</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-personal" data-cat="personal">
+        <div class="idea-num">28</div>
+        <div class="idea-body">
+          <div class="idea-cat">🙋 Personal Story</div>
+          <div class="idea-title">Konten gua yang paling flop — dan apa yang gua pelajari dari sana</div>
+          <div class="idea-angle">Jujur soal kegagalan itu membangun trust lebih cepat dari highlight reel.</div>
+          <div class="idea-format">📸 Single Post</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-personal" data-cat="personal">
+        <div class="idea-num">29</div>
+        <div class="idea-body">
+          <div class="idea-cat">🙋 Personal Story</div>
+          <div class="idea-title">Kenapa gua milih niche ini — dan bagaimana itu mengubah segalanya</div>
+          <div class="idea-angle">Origin story yang membangun koneksi emosional dengan audiens baru.</div>
+          <div class="idea-format">🎬 Reels Talking Head</div>
+        </div>
+      </div>
+
+      <div class="idea-card cat-personal" data-cat="personal">
+        <div class="idea-num">30</div>
+        <div class="idea-body">
+          <div class="idea-cat">🙋 Personal Story</div>
+          <div class="idea-title">Satu keputusan yang paling berdampak dalam perjalanan ngonten gua</div>
+          <div class="idea-angle">Storytelling dengan satu insight kuat di akhir. Sangat shareable.</div>
+          <div class="idea-format">📸 Single Post</div>
+        </div>
+      </div>
+
+    </div><!-- /ideas-grid -->
+
+    <div class="callout green" style="margin-top: 16px;">
+      💡 <strong>Reminder:</strong> Setiap ide di atas bisa lo adaptasi ke pengalaman personal lo. Makin spesifik dan jujur kontennya — makin tinggi engagement-nya.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- BRIDGE MASALAH -->
+  <div class="reveal">
+    <div class="bridge">
+      <div class="bridge-eyebrow">💬 Tapi gua tau masalah terbesar lu setelah baca ini...</div>
+      <p>Lu udah punya 30 ide. Tapi pas mau buka CapCut atau nulis caption, lu pasti stuck di sini:</p>
+      <div class="pain">
+        "Aduh, <strong>kalimat pertama video gua (Hook)</strong> harus nulis apa ya?<br>
+        Terus di <strong>caption</strong> gua harus ngetik apa biar orang mau baca?"
+      </div>
+      <p class="resolve">Akhirnya, lu malah overthinking lagi, tutup HP, dan gak jadi upload.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section reveal">
+    <div class="cta-box">
+      <div class="cta-free">✦ Solusinya Simpel</div>
+      <h3>Gak usah pusing<br>mikir kalimat dari <span>nol.</span></h3>
+      <p>Gua udah nulis <strong>Hook & Caption Swipe File</strong> berisi template siap pakai yang biasa gua gunain sendiri. Lu tinggal fokus rekam video pakai HP — kalimat pemikatnya tinggal lu contek. Gak perlu pusing mikir berjam-jam lagi.</p>
+
+      <div class="price-row">
+        <div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:3px;">Harga</div>
+          <div class="price-main">Rp 29.000</div>
+        </div>
+        <div class="price-sep"></div>
+        <div class="price-note">Seharga sebungkus rokok<br>atau segelas kopi ☕</div>
+      </div>
+
+      <a href="http://lynk.id/adingrh14/2zgkmz2920z1/checkout" target="_blank" class="btn">
+        Ambil Swipe File di Sini
+        <span class="btn-arrow">→</span>
+      </a>
+
+      <div class="cta-note">🔒 Pembayaran aman via Lynk.id · Akses langsung setelah bayar</div>
+      <div class="cta-quote">"Harganya sengaja gua bikin sangat murah karena niat gua cuma satu — bantu lu cepet melangkah dan bisa dapet penghasilan tambahan dari ngonten."</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Dibuat dengan ❤️ oleh <a href="https://instagram.com/adigitalabs" target="_blank">@adigitalabs</a></p>
+    <p style="margin-top:8px;">Bookmark halaman ini dan balik lagi tiap kali kehabisan ide.</p>
+  </div>
+
+</div>
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.06 });
+reveals.forEach(el => obs.observe(el));
+
+// Filter
+function filterIdeas(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  document.querySelectorAll('.idea-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+</script>
+</body>
+</html>
